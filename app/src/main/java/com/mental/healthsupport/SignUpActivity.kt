@@ -85,6 +85,7 @@ class SignUpActivity : AppCompatActivity() {
         password: String,
     ) {
 
+
         try {
            auth.createUserWithEmailAndPassword(
                email,
@@ -93,7 +94,6 @@ class SignUpActivity : AppCompatActivity() {
 
                    if(task.isSuccessful){
                        val userId = auth.currentUser?.uid ?: ""
-
                         val userMap = mapOf(
                             "name" to name,
                             "email" to email,

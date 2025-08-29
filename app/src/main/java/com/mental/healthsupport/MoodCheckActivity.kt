@@ -87,6 +87,10 @@ class MoodCheckActivity  : AppCompatActivity() {
             startActivity(intent)
         }
 
+        chatCard.setOnClickListener {
+            val intent = Intent(this, ChatActivity::class.java)
+            startActivity(intent)
+        }
 
         logoutBtn.setOnClickListener {
             logout()
